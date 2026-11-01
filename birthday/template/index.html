@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise ❤️</title>
+
+    <link rel="stylesheet"
+          href="{% static 'birthday/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- First Page -->
+    <section class="welcome" id="welcome">
+
+        <div class="content">
+            <h1>🎁 A Special Surprise</h1>
+
+            <p>This is for you Ammuu...</p>
+
+            <button onclick="startSurprise()">
+                Open Your Surprise ❤️
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Birthday Page -->
+    <section class="birthday hidden" id="birthday">
+
+        <h1 class="birthday-title">
+            🎉 Happy Birthday Ammuuluuu! 🎉
+        </h1>
+
+        <div class="cake">🎂</div>
+
+        <h2>Special Person in my life❤️</h2>
+
+        <p>
+            Today is your special day.
+            Keep smiling and stay happy always!
+        </p>
+
+        <button onclick="showMessage()">
+            Open chey nana 💌
+        </button>
+
+    </section>
+
+
+    <!-- Message Page -->
+    <section class="message hidden" id="message">
+
+        <div class="message-card">
+
+            <h1>A Little Message For You 💗</h1>
+
+            <p>
+                Happy Birthday to someone who makes
+                my life more beautiful.
+
+                I hope all your dreams come true.
+
+                May your smile never fade and may
+                happiness always surround you.
+
+                You are a very special part of my life.
+
+                Stay happy and keep smiling forever! ❤️
+            </p>
+
+            <h2>With lots of love 💕</h2>
+
+            <button onclick="showPhotos()">
+                Open Our Memories 📸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Photo Gallery -->
+    <section class="gallery hidden" id="gallery">
+
+        <h1>Our Beautiful Memories ❤️</h1>
+
+        <p>Every picture has a special story.</p>
+
+        <div class="photo-container">
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo1.jpeg' %}">
+                <p>Beautiful Memory ❤️</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo2.jpeg' %}">
+                <p>Special Moments 💕</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo3.jpeg' %}">
+                <p>Unforgettable Days ✨</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo4.jpeg' %}">
+                <p>Forever Memories 💗</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo5.jpeg' %}">
+                <p>Our Moments 🥰</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo6.jpeg' %}">
+                <p>Special Day 💖</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo7.jpeg' %}">
+                <p>Sweet Memories 🌸</p>
+            </div>
+
+            <div class="photo">
+                <img src="{% static 'birthday/images/photo8.jpeg' %}">
+                <p>Always Remember ❤️</p>
+            </div>
+
+        </div>
+
+        <h2 class="end-message">
+            Once Again, Happy Birthday! 🎂❤️
+        </h2>
+
+    </section>
+
+
+    <script src="{% static 'birthday/js/script.js' %}"></script>
+
+</body>
+</html>
